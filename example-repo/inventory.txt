@@ -1,0 +1,11 @@
+Country,Code,Product,Cost,Quantity
+South Africa,SKU44386,Air Max 90,2300,20
+China,SKU90000,Air Force 1,1800,12
+Vietnam,SKU63221,Blazer Mid,1700,15
+United States,SKU29077,Air Jordan 1,3200,8
+United Kingdom,SKU32200,Pegasus 40,2100,18
+Brazil,SKU22110,Zoom Fly 5,2600,10
+Australia,SKU77881,InfinityRN 4,2400,14
+Canada,SKU55432,Dunk Low,2200,7
+India,SKU11234,Revolution 7,1400,25
+France,SKU66554,Cortez,1900,11

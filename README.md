@@ -1,58 +1,64 @@
-Example Repository
+# Python Coursework Examples
 
-Project Description
+Two console programs from my HyperionDev software engineering coursework, shared for Task 25: Version Control and Git Basics.
 
-This repository contains a collection of Python programming exercises and examples created as part of my software engineering bootcamp with HyperionDev.
+## Programs
 
-The purpose of this repository is to demonstrate foundational Python programming skills, including writing, executing, and maintaining Python code using Git and GitHub for version control.
+- **Minesweeper grid calculator** (`minesweeper.py`): accepts a grid containing `#` mines and `-` empty cells, then replaces each empty cell with the number of neighbouring mines. This demonstrates two-dimensional lists, loops, functions, and boundary checks.
+- **Nike warehouse inventory manager** (`example-repo/inventory.py`): loads shoe records from `inventory.txt`, displays and searches inventory, captures new shoes, restocks the lowest-quantity item, calculates stock values, and identifies the highest-quantity item. Additions and restocking are saved to the data file.
 
-Features
+## Setup
 
-* Basic Python programs demonstrating programming fundamentals.
-* Examples of console output and simple program execution.
-* Version control using Git to track changes and maintain project history.
-* GitHub repository hosting for sharing and managing code.
+Install Python 3 and Git, then clone this repository:
 
-Technologies Used
-
-* Python 3 — Programming language.
-* Git — Version control system.
-* GitHub — Remote repository hosting.
-
-Installation
-
-1. Ensure Python 3 and Git are installed on your computer.
-2. Clone the repository:
-
+```sh
 git clone https://github.com/mpapp87/example-repo.git
-
-3. Navigate into the project directory:
-
 cd example-repo
+```
 
-Usage
+No third-party Python packages are required.
 
-Run a Python script from the terminal. For example, if the repository contains hello_world.py:
+## Run Minesweeper
 
-python hello_world.py
+From the repository root:
 
-The program prints a message to the terminal.
+```sh
+python3 minesweeper.py
+```
 
-Project Goals
+Enter positive whole numbers for the row and column counts. Enter each row using only `#` and `-`, with exactly the requested number of columns. For example, use 2 rows, 3 columns, and these rows:
 
-This project demonstrates my ability to:
+```text
+#--
+--#
+```
 
-* Create and manage Git repositories.
-* Track source code changes through commits.
-* Push local repositories to GitHub.
-* Document software projects using Markdown.
+Result:
 
-Author
+```text
+['#', 2, 1]
+[1, 2, '#']
+```
 
-mpapp87
+The program validates row length and characters; it does not handle non-integer or non-positive dimensions.
 
-Software Engineering Bootcamp Student — HyperionDev
+## Run the inventory manager
 
-Repository
+From the repository root, change into the existing nested project directory so the program can find its data file:
 
-https://github.com/mpapp87/example-repo
+```sh
+cd example-repo
+python3 inventory.py
+```
+
+Use menu options 1-7 to manage inventory and option 8 to exit. The bundled `inventory.txt` is sample data. Capturing or restocking shoes modifies that file.
+
+On systems where Python 3 is launched with `python` or `py`, use that command instead of `python3`.
+
+## Coursework source and maintainer
+
+Maintained by [mpapp87](https://github.com/mpapp87).
+
+`minesweeper.py` is copied unchanged from my existing coursework repository, `hyperiondev-bootcamps/MP26030020049`, at `Level 1 - Python for Software Engineering/M03T04 – Data Structures – 2D Lists/minesweeper.py` (source Git blob `90cbe9104c6b705826618f4b0b0d3c6ef4ff9aff`). The source coursework repository may require access.
+
+The inventory program and sample data were already present in this repository. These examples demonstrate Python programming and sharing code with Git and GitHub.

@@ -1,4 +1,5 @@
 def count_adjacent_mines(grid, row, col):
+    """Count mines in the eight neighbouring cells, respecting grid edges."""
     mine_count = 0
 
     for row_offset in range(-1, 2):
@@ -22,6 +23,7 @@ def count_adjacent_mines(grid, row, col):
 
 
 def create_minesweeper_grid(grid):
+    """Return a new grid with empty cells replaced by adjacent mine counts."""
     result = []
 
     for row_index, row in enumerate(grid):

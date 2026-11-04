@@ -59,6 +59,6 @@ On systems where Python 3 is launched with `python` or `py`, use that command in
 
 Maintained by [mpapp87](https://github.com/mpapp87).
 
-`minesweeper.py` is copied unchanged from my existing coursework repository, `hyperiondev-bootcamps/MP26030020049`, at `Level 1 - Python for Software Engineering/M03T04 – Data Structures – 2D Lists/minesweeper.py` (source Git blob `90cbe9104c6b705826618f4b0b0d3c6ef4ff9aff`). The source coursework repository may require access.
+`minesweeper.py` comes from my existing coursework repository, `hyperiondev-bootcamps/MP26030020049`, at `Level 1 - Python for Software Engineering/M03T04 – Data Structures – 2D Lists/minesweeper.py` (source Git blob `90cbe9104c6b705826618f4b0b0d3c6ef4ff9aff`). Function docstrings were added locally for clarity; the program logic is unchanged. The source coursework repository may require access.
 
 The inventory program and sample data were already present in this repository. These examples demonstrate Python programming and sharing code with Git and GitHub.
